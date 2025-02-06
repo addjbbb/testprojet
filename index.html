@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+    <html lang="fr">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Mon Site Modifié</title>
+      <style>
+        body {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+          margin: 0;
+          font-family: Arial, sans-serif;
+        }
+        button {
+          padding: 10px 20px;
+          font-size: 16px;
+          cursor: pointer;
+          margin: 5px;
+        }
+      </style>
+    </head>
+    <body>
+      <button id="bonjourButton">Cliquez ici pour Bonjour</button>
+      <button id="bonsoirButton">Cliquez ici pour Bonsoir</button>
+
+      <script>
+        document.getElementById('bonjourButton').addEventListener('click', function() {
+          alert('Bonjour');
+        });
+
+        document.getElementById('bonsoirButton').addEventListener('click', function() {
+          alert('Bonsoir');
+        });
+      </script>
+    </body>
+    </html>
